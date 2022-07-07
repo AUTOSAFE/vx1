@@ -46,7 +46,7 @@ By : ${('Lana')}
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalkWhite(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
+      console.log(chalkRainbow(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
 
     } else if (result.includes('User')) {
 
