@@ -35,15 +35,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 ╚██╗ ██╔╝██║██╔═══╝                
  ╚████╔╝ ██║██║                    
   ╚═══╝  ╚═╝╚═╝                    
-                                   
-██╗  ██╗███╗   ██╗ █████╗  ██████╗ 
-╚██╗██╔╝████╗  ██║██╔══██╗██╔═══██╗
- ╚███╔╝ ██╔██╗ ██║███████║██║   ██║
- ██╔██╗ ██║╚██╗██║██╔══██║██║▄▄ ██║
-██╔╝ ██╗██║ ╚████║██║  ██║╚██████╔╝
-╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚══▀▀═╝
-
-By : ${('Xnaq')}
+By : ${('Lana')}
 `));
 
   const auth = rs.question(chalkRainbow('Token : '));
@@ -54,7 +46,7 @@ By : ${('Xnaq')}
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalkRainbow(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
+      console.log(chalkWhite(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
 
     } else if (result.includes('User')) {
 
@@ -64,14 +56,14 @@ By : ${('Xnaq')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-      console.log(chalkRainbow(`\r
+      console.log(chalkWhite(`\r
 -  [${moment().format('HH:mm:ss')}]  -
->  ${(`Negara By Xnaq : ${country}`)}
->  ${(`Nama By Xnaq : ${username}`)}  
->  ${(`Piala By Xnaq : ${trophy}`)}  
->  ${(`Mahkota By Xnaq : ${crown}`)}
+>  ${(`Negara By Lana : ${country}`)}
+>  ${(`Nama By Lana : ${username}`)}  
+>  ${(`Piala By Lana : ${trophy}`)}  
+>  ${(`Mahkota By Lana : ${crown}`)}
 >  ${(`Status : Success !`)}`));
-      await sleep(6500);
+      await sleep(1000);
 
     } else if (result == 'BANNED') {
       console.log(chalk.bgRed(`Mampus Banned Makanya jangan brutal`));
