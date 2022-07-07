@@ -64,7 +64,7 @@ By : ${('Lana')}
 >  ${(`Piala By Lana : ${trophy}`)}  
 >  ${(`Mahkota By Lana : ${crown}`)}
 >  ${(`Status : Success !`)}`));
-      await sleep(1500);
+      await sleep(5000);
 
     } else if (result == 'BANNED') {
       console.log(chalk.bgRed(`Mampus Banned Makanya jangan brutal`));
