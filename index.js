@@ -57,7 +57,7 @@ By : ${('Lana')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-      console.log(chalkRainbow(`\r
+      console.log(chalkGreen(`\r
 -  [${moment().format('HH:mm:ss')}]  -
 >  ${(`Negara By Lana : ${country}`)}
 >  ${(`Nama By Lana : ${username}`)}  
