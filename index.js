@@ -41,8 +41,6 @@ By : ${('Lana')}
 
   const auth = rs.question(chalkRainbow('Token : '));
   console.log('');
-  const token = rs.question(chalk.red([+] Input you token : ));
-  if (token == "32") {
     console.log(chalk.green(Token benar!));
   while (true) {
 
