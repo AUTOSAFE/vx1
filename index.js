@@ -47,7 +47,7 @@ By : ${('Lana')}
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalkgreen(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
+      console.log(chalkRainbow(`\r[ ${moment().format('HH:mm:ss')} ] Auth Eror !`));
 
     } else if (result.includes('User')) {
 
@@ -57,7 +57,7 @@ By : ${('Lana')}
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-      console.log(chalkgreen(`\r
+      console.log(chalkRainbow(`\r
 -  [${moment().format('HH:mm:ss')}]  -
 >  ${(`Negara By Lana : ${country}`)}
 >  ${(`Nama By Lana : ${username}`)}  
