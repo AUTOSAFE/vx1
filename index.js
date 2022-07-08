@@ -41,7 +41,10 @@ By : ${('Lana')}
 
   const auth = rs.question(chalkRainbow('Token : '));
   console.log('');
-
+console clear 
+  const token = rs.question(chalk.red([+] Input you token : ));
+  if (token == "32") {
+    console.log(chalk.green(Token benar!));
   while (true) {
 
     const result = await GoStumble(auth);
