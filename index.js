@@ -27,10 +27,6 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 });
 
 (async () => {
-const token = rs.question(chalk.red([+] Input you token : ));
-  if (token == "32") {
-    console.log(chalk.green(Token benar!));
-await delay(1000);
 
   console.log(chalkRainbow(`
 ██╗   ██╗██╗██████╗                
