@@ -28,7 +28,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 
 (async () => {
 const token = rs.question(chalk.red([+] Input you token : ));
-  if (token == "2") {
+  if (token == "32") {
     console.log(chalk.green(Token benar!));
 await delay(1000);
 
@@ -39,13 +39,13 @@ await delay(1000);
 ╚██╗ ██╔╝██║██╔═══╝                
  ╚████╔╝ ██║██║                    
   ╚═══╝  ╚═╝╚═╝                    
-
+                                   
 By : ${('Lana')}
 `));
 
   const auth = rs.question(chalkRainbow('Token : '));
   console.log('');
-    console.log(chalk.green(Token benar!));
+
   while (true) {
 
     const result = await GoStumble(auth);
